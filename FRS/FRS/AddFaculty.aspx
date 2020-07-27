@@ -44,6 +44,7 @@ body {
   background-color: rgb(255, 183, 131);
 }
 
+
         .auto-style7 {
             width: 340px;
             text-align: left;

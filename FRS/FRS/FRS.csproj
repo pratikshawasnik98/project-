@@ -181,7 +181,6 @@
     <Content Include="MarkManualAttedance.aspx" />
     <Content Include="mywebcam.html" />
     <Content Include="RegisterForm.aspx" />
-    <Content Include="registration.aspx" />
     <Content Include="savephoto.aspx" />
     <Content Include="ScanFace.aspx" />
     <Content Include="StudentDashboard.aspx" />
@@ -343,13 +342,6 @@
     </Compile>
     <Compile Include="RegisterForm.aspx.designer.cs">
       <DependentUpon>RegisterForm.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="registration.aspx.cs">
-      <DependentUpon>registration.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="registration.aspx.designer.cs">
-      <DependentUpon>registration.aspx</DependentUpon>
     </Compile>
     <Compile Include="savephoto.aspx.cs">
       <DependentUpon>savephoto.aspx</DependentUpon>

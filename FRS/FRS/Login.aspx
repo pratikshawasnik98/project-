@@ -31,6 +31,9 @@
         body {
   background-color: rgb(255, 183, 131);
 }
+        .auto-style3 {
+            font-size: large;
+        }
     </style>
    
 </head>
@@ -59,10 +62,11 @@
 						    </div>
 					    </div>
 					    <div class="col-md topper d-flex align-items-center justify-content-end">
-					    	<p class="mb-0">
-					    		<a href="Login.aspx" class="btn py-2 px-3 btn-primary d-flex align-items-center justify-content-center">
-					    			<span>Sign In</span> 
-					    		</a>                  
+                            <p class="mb-0">
+                                <a href="Login.aspx" class="btn py-2 px-3 btn-primary d-flex">
+                                    <span>Sign In</span>
+                                </a>
+      
                         <div class="col-md topper d-flex align-items-center justify-content-end">
 					    	<p class="mb-0">
 					    		<a href="RegisterForm.aspx" class="btn py-2 px-3 btn-primary d-flex align-items-center justify-content-center">		    			
@@ -81,62 +85,78 @@
     		
         <div class="auto-style4">
             <div class="auto-style2">
-            <font color ="black"><strong>Login</strong>
-            <br />
+                <font color ="black"><strong>
+                <span class="auto-style7">
                 <br />
-            <br />
+                <span class="auto-style3">Login</span></span></strong><span class="auto-style5">
+                </span>
+            <br class="auto-style5" />
+                <br />
               
                 </div>
-                <table align="center" class="auto-style3">
-                    <tr>
-                        <td class="auto-style2">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <asp:TextBox ID="TextBox1" runat="server" Height="28px" OnTextChanged="TextBox1_TextChanged1" Width="265px" placeholder="Enter a Email ID" TextMode="Email"></asp:TextBox>
+            <br />
+            <table align="center" class="auto-style6">
+                <tr>
+                    <td>Enter Your Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+                    <td>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
                         </td>
-                    </tr>
-                    <tr>
-                        <td class="auto-style2">
-                            &nbsp;</td>
-                    </tr>
-                    <tr>
-                        <td class="auto-style2">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <asp:TextBox ID="TextBox2" runat="server" Height="30px" Width="265px" placeholder="Enter a Password" TextMode="Password"></asp:TextBox>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;Enter Password<font color ="black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+                    </td>
+                    <td>
+                <font color ="black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font>
+                        <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
                         </td>
-                    </tr>
-                    <tr>
-                        <td class="auto-style2">
-                            &nbsp;</td>
-                    </tr>
-                    <tr>
-                        <td class="auto-style2">
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="text-center" colspan="2">
+            <font color ="black">
                             <asp:Button ID="Button1" runat="server" Text="Login" Height="38px" Width="94px" OnClick="Button1_Click" />
                         </td>
-                    </tr>
-                    <tr>
-                        <td class="auto-style2">
-                            &nbsp;</td>
-                    </tr>
-                    <tr>
-                        <td class="auto-style2">
-                            <asp:Label ID="StatusLabel" runat="server" Text="Status"></asp:Label>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="text-center" colspan="2">
+            <font color ="black">
+                            <asp:Label ID="StatusLabel" runat="server"></asp:Label>
                         </td>
-                    </tr>
-                    <tr>
-                        <td class="auto-style2">
+                </tr>
+                <tr>
+                    <td class="text-center" colspan="2">
+            <font color ="black">
+                            <strong>
                             <asp:HyperLink runat="server" NavigateUrl="forgotPassword.aspx">Forgot Password</asp:HyperLink>
+                        </strong>
                         </td>
-                    </tr>
-                    <tr>
-                        <td class="auto-style2">
-                            &nbsp;</td>
-                    </tr>
-                    <tr>
-                        <td class="auto-style2">
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="text-center" colspan="2">
+            <font color ="black">
+                            <strong>
                             <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/registration.aspx">Don&#39;t have an account? Register here</asp:HyperLink>
+                        </strong>
                         </td>
-                    </tr>
-                </table>
+                </tr>
+            </table>
                 <div class="auto-style2">
                 <br />
                 

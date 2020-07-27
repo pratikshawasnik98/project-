@@ -15,6 +15,10 @@ namespace FRS
         FacultyMarkManualAttendancedll fmma = new FacultyMarkManualAttendancedll();
         protected void Page_Load(object sender, EventArgs e)
         {
+
+            //StudentNameDropDownList.Items.Insert(0,"-- Select --");
+            //StudentNameDropDownList.Items.Add("Please Select a product");
+           // StudentNameDropDownList.Items.Insert(0, new ListItem("Please Select a product", "Please Select a product"));
         }
        
         string res = "";
