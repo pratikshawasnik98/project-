@@ -57,6 +57,10 @@
   background-color: rgb(255, 183, 131);
 }
 
+         .auto-style8 {
+             color: #FF0000;
+         }
+
          </style>
 </head>
 <body>
@@ -103,7 +107,7 @@
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
-	      <form>
+	      </div>
           
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav mr-auto">
@@ -116,7 +120,6 @@
                 <li class="nav-item"><a href="MarkManualAttedance.aspx" class="nav-link">Mark Maunal Attendance</a></li>
 	        </ul>
 	      </div>
-        </form>
 	    </div>
 	  </nav>
 
@@ -133,7 +136,7 @@
                     <td class="auto-style7">
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <asp:TextBox ID="StudentNameTextBox" runat="server" Wrap="False" Height="23px" Width="175px"></asp:TextBox>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="StudentNameTextBox" ErrorMessage="First name can not be blank">Enter first name</asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="StudentNameTextBox" ErrorMessage="First name can not be blank" CssClass="auto-style8">Enter first name</asp:RequiredFieldValidator>
                         </td>
                 </tr>
                 <tr>
@@ -156,7 +159,7 @@
                     <td class="auto-style7">
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <asp:TextBox ID="PhoneNumberTextBox" runat="server" TextMode="Phone" Height="23px" Width="175px"></asp:TextBox>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator11" runat="server" ControlToValidate="PhoneNumberTextBox" ErrorMessage="Contact Number can not be blank"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator11" runat="server" ControlToValidate="PhoneNumberTextBox" ErrorMessage="Contact Number can not be blank" CssClass="auto-style8"></asp:RequiredFieldValidator>
                             </td>
                 </tr>
                 <tr>
@@ -189,6 +192,7 @@
                         <asp:ListItem>CPlus2020</asp:ListItem>
                         <asp:ListItem>MachLearning2020</asp:ListItem>
                     </asp:DropDownList>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator12" runat="server" ControlToValidate="BatchCodeDropDownList" ErrorMessage="Select Batch Code" ForeColor="Red"></asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>

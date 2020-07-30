@@ -23,12 +23,20 @@
         }
         .auto-style6 {
             margin-left: 40px;
+            text-align: left;
         }
          body {
   background-color: rgb(255, 183, 131);
 }
         .auto-style7 {
             width: 369px;
+            text-align: left;
+        }
+        .auto-style8 {
+            color: #FF0000;
+            font-size: medium;
+        }
+        .auto-style9 {
             text-align: left;
         }
     </style>
@@ -47,10 +55,11 @@
                     <td class="auto-style7">
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Batch Code</td>
             <strong>
-                    <td>
-                        <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource1" DataTextField="Faculty_Name" DataValueField="Faculty_Name" Height="23px" Width="175px">
+                    <td class="auto-style9">
+                        <asp:DropDownList ID="BatchCodeDropDownList" runat="server" DataSourceID="SqlDataSource1" DataTextField="Faculty_Name" DataValueField="Faculty_Name" Height="23px" Width="175px">
                         </asp:DropDownList>
                         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:FRSDatabaseConnectionString47 %>" SelectCommand="SELECT [Faculty_Name] FROM [AddFacultyDB]"></asp:SqlDataSource>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="BatchCodeDropDownList" CssClass="auto-style8" ErrorMessage="Select Batch Code"></asp:RequiredFieldValidator>
                         <br />
                     </td>
                 </tr>
@@ -62,9 +71,10 @@
                 </tr>
                 <tr>
                     <td class="auto-style7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subject</td>
-                    <td>
-                        <asp:DropDownList ID="DropDownList4" runat="server" Height="23px" Width="175px">
+                    <td class="auto-style9">
+                        <asp:DropDownList ID="SubjectDropDownList" runat="server" Height="23px" Width="175px">
                         </asp:DropDownList>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="SubjectDropDownList" CssClass="auto-style8" ErrorMessage="Select Subject"></asp:RequiredFieldValidator>
                         <br />
                     </td>
                 </tr>
@@ -76,8 +86,9 @@
                 <tr>
                     <td class="auto-style7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Faculty Name</td>
                     <td class="auto-style6">
-                        <asp:DropDownList ID="DropDownList3" runat="server" Height="23px" Width="175px">
+                        <asp:DropDownList ID="FacultyDropDownList" runat="server" Height="23px" Width="175px">
                         </asp:DropDownList>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="FacultyDropDownList" CssClass="auto-style8" ErrorMessage="Select Faculty Name"></asp:RequiredFieldValidator>
                         <br />
                     </td>
                 </tr>

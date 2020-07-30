@@ -105,6 +105,15 @@ namespace FRS
         protected global::System.Web.UI.WebControls.DropDownList BatchCodeDropDownList;
 
         /// <summary>
+        /// RequiredFieldValidator12 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator12;
+
+        /// <summary>
         /// SaveButton control.
         /// </summary>
         /// <remarks>

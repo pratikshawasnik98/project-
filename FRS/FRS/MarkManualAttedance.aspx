@@ -47,6 +47,11 @@ body {
   background-color: rgb(255, 183, 131);
 }
 
+       .auto-style6 {
+           color: #FF5050;
+           font-size: medium;
+       }
+
     </style>
 </head>
 <body>
@@ -195,7 +200,8 @@ body {
             <tr>
                 <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; In Time</td>
                 <td>
-                    <asp:TextBox ID="TextBox1" runat="server" TextMode="Time" Width="175px" Height="23px"></asp:TextBox>
+                    <asp:TextBox ID="InTimeTextBox" runat="server" TextMode="Time" Width="175px" Height="23px"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="InTimeTextBox" CssClass="auto-style6" ErrorMessage="Select In Time"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
@@ -205,7 +211,8 @@ body {
             <tr>
                 <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Out Time</td>
                 <td>
-                    <asp:TextBox ID="TextBox2" runat="server" TextMode="Time" Width="175px" Height="23px"></asp:TextBox>
+                    <asp:TextBox ID="OutTimeTextBox" runat="server" TextMode="Time" Width="175px" Height="23px"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="OutTimeTextBox" CssClass="auto-style6" ErrorMessage="Select Out Time"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
@@ -216,6 +223,7 @@ body {
                 <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Date</td>
                 <td>
                     <asp:TextBox ID="DateandTimeTextBox" runat="server" TextMode="Date" Width="175px" Height="23px"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="DateandTimeTextBox" CssClass="auto-style6" ErrorMessage="Select Valid Date"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
@@ -230,6 +238,7 @@ body {
                         <asp:ListItem>Present</asp:ListItem>
                         <asp:ListItem>Absent</asp:ListItem>
                     </asp:DropDownList>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="AttendanceDropDownList" CssClass="auto-style6" ErrorMessage="Select Attendance"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>

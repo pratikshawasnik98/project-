@@ -123,7 +123,7 @@ body {
             <tr>
                 <td>&nbsp;</td>
                 <td>
-                    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="User_ID" DataSourceID="SqlDataSource2" BackColor="#DEBA84" BorderColor="#DEBA84" BorderStyle="None" BorderWidth="1px" CellPadding="3" CellSpacing="2">
+                    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="User_ID" DataSourceID="SqlDataSource2">
                         <Columns>
                             <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
                             <asp:BoundField DataField="User_ID" HeaderText="User_ID" InsertVisible="False" ReadOnly="True" SortExpression="User_ID" />
@@ -132,15 +132,6 @@ body {
                             <asp:BoundField DataField="Phone_Number" HeaderText="Phone_Number" SortExpression="Phone_Number" />
                             <asp:BoundField DataField="Gender" HeaderText="Gender" SortExpression="Gender" />
                         </Columns>
-                        <FooterStyle BackColor="#F7DFB5" ForeColor="#8C4510" />
-                        <HeaderStyle BackColor="#A55129" Font-Bold="True" ForeColor="White" />
-                        <PagerStyle ForeColor="#8C4510" HorizontalAlign="Center" />
-                        <RowStyle BackColor="#FFF7E7" ForeColor="#8C4510" />
-                        <SelectedRowStyle BackColor="#738A9C" Font-Bold="True" ForeColor="White" />
-                        <SortedAscendingCellStyle BackColor="#FFF1D4" />
-                        <SortedAscendingHeaderStyle BackColor="#B95C30" />
-                        <SortedDescendingCellStyle BackColor="#F1E5CE" />
-                        <SortedDescendingHeaderStyle BackColor="#93451F" />
                     </asp:GridView>
                     <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:FRSDatabaseConnectionString7 %>" DeleteCommand="DELETE FROM [AddFacultyDB] WHERE [User_ID] = @User_ID" InsertCommand="INSERT INTO [AddFacultyDB] ([Faculty_Name], [Address], [Phone_Number], [Gender]) VALUES (@Faculty_Name, @Address, @Phone_Number, @Gender)" SelectCommand="SELECT [User_ID], [Faculty_Name], [Address], [Phone_Number], [Gender] FROM [AddFacultyDB] WHERE ([Faculty_Name] = @Faculty_Name)" UpdateCommand="UPDATE [AddFacultyDB] SET [Faculty_Name] = @Faculty_Name, [Address] = @Address, [Phone_Number] = @Phone_Number, [Gender] = @Gender WHERE [User_ID] = @User_ID">
                         <DeleteParameters>

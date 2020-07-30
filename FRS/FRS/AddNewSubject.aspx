@@ -55,6 +55,9 @@
    body {
   background-color: rgb(255, 183, 131);
 }
+        .auto-style6 {
+            color: #FF0000;
+        }
         </style>
 </head>
 <body>
@@ -137,7 +140,7 @@
                         <asp:ListItem>CPlus2020</asp:ListItem>
                         <asp:ListItem>MachLearning2020</asp:ListItem>
                     </asp:DropDownList>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="SubjectNameDropDownList" ErrorMessage="Subject Name can not be blank"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="SubjectNameDropDownList" ErrorMessage="Subject Name can not be blank" CssClass="auto-style6"></asp:RequiredFieldValidator>
                         </td>
                 </tr>
                 <tr>
@@ -153,7 +156,7 @@
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font>Description</td>
                     <td>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:TextBox ID="DescriptionTextBox" runat="server" TextMode="MultiLine" Height="23px" Width="175px"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="DescriptionTextBox" ErrorMessage="Enter description of subject"></asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="DescriptionTextBox" ErrorMessage="Enter description of subject" CssClass="auto-style6"></asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>

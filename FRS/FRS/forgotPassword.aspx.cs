@@ -13,24 +13,26 @@ namespace FRS
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!Page.IsPostBack)
+           /* if (!Page.IsPostBack)
             {
                 ArrayList al = new ArrayList();
                 FotgotPassworddll ad = new FotgotPassworddll();
                 al = ad.getemailids();
-                DropDownList1.Items.Clear();
+               DropDownList1.Items.Clear();
+               
                 foreach (string s in al)
                 {
                     DropDownList1.Items.Add(s);
                 }
-            }
+            }*/
 
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+            //string email = EmailTextBox.Text;
             FotgotPassworddll ad = new FotgotPassworddll();
-            StausLabel.Text = ad.updatepassword(DropDownList1.Text, TextBox2.Text);
+            StausLabel.Text = ad.updatepassword(EmailTextBox.Text, PassTextBox.Text);
 
 
         }

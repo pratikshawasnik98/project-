@@ -71,6 +71,9 @@ input {
  body {
   background-color: rgb(255, 183, 131);
 }
+        .auto-style9 {
+            color: #FF0000;
+        }
     </style>
 </head>
 <body>
@@ -178,7 +181,7 @@ input {
                 <td>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <asp:TextBox ID="FirstNameTextBox" runat="server" Height="23px" Width="175px"></asp:TextBox>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="FirstNameTextBox" ErrorMessage="First name can not be blank">Enter first name</asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="FirstNameTextBox" ErrorMessage="First name can not be blank" CssClass="auto-style9">Enter first name</asp:RequiredFieldValidator>
                         </td>
             </tr>
             <tr>
@@ -186,7 +189,7 @@ input {
                 <td>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <asp:TextBox ID="LastNameTextBox" runat="server" Height="23px" Width="175px"></asp:TextBox>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="LastNameTextBox" ErrorMessage="Last name can not be blank">Enter last name</asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="LastNameTextBox" ErrorMessage="Last name can not be blank" CssClass="auto-style9">Enter last name</asp:RequiredFieldValidator>
                         </td>
             </tr>
             <tr>
@@ -201,15 +204,15 @@ input {
                 <td>
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             <asp:TextBox ID="ContactNumberTextBox" runat="server" TextMode="Phone" Height="23px" Width="175px"></asp:TextBox>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator11" runat="server" ControlToValidate="ContactNumberTextBox" ErrorMessage="Contact Number can not be blank"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator11" runat="server" ControlToValidate="ContactNumberTextBox" ErrorMessage="Contact Number can not be blank" CssClass="auto-style9"></asp:RequiredFieldValidator>
                             </td>
             </tr>
             <tr>
                 <td class="auto-style3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Email ID</td>
                 <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="EmailTextBox" runat="server" Height="23px" Width="175px"></asp:TextBox>
-            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="EmailTextBox" ErrorMessage="Enter valid EmailID" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ControlToValidate="EmailTextBox" ErrorMessage="Email ID can not be blank"></asp:RequiredFieldValidator>
-                            <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="EmailTextBox" ErrorMessage="Invalid Email " ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
+            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="EmailTextBox" ErrorMessage="Enter valid EmailID" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" CssClass="auto-style9"></asp:RegularExpressionValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ControlToValidate="EmailTextBox" ErrorMessage="Email ID can not be blank" CssClass="auto-style9"></asp:RequiredFieldValidator>
+                            <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="EmailTextBox" ErrorMessage="Invalid Email " ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" CssClass="auto-style9"></asp:RegularExpressionValidator>
                         </td>
             </tr>
             <tr>
@@ -228,10 +231,10 @@ input {
                 <td class="auto-style8">
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <asp:TextBox ID="PasswordTextBox" runat="server" TextMode="Password" Height="23px" Width="175px"></asp:TextBox>
-            <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="PasswordTextBox" ControlToValidate="ConformPasswordTextBox" ErrorMessage="Password dose not match"></asp:CompareValidator>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ControlToValidate="PasswordTextBox" ErrorMessage="Password can not be blank"></asp:RequiredFieldValidator>
+            <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="PasswordTextBox" ControlToValidate="ConformPasswordTextBox" ErrorMessage="Password dose not match" CssClass="auto-style9"></asp:CompareValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ControlToValidate="PasswordTextBox" ErrorMessage="Password can not be blank" CssClass="auto-style9"></asp:RequiredFieldValidator>
                             <br />
-                            <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="PasswordTextBox" ErrorMessage="Please enter at least One captial letter, Special Symbol, number" SetFocusOnError="True" ValidationExpression="^.*(?=.{8,})(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!*@#$%^&amp;+=]).*$"></asp:RegularExpressionValidator>
+                            <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="PasswordTextBox" ErrorMessage="Please enter at least One captial letter, Special Symbol, number" SetFocusOnError="True" ValidationExpression="^.*(?=.{8,})(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!*@#$%^&amp;+=]).*$" CssClass="auto-style9"></asp:RegularExpressionValidator>
                         </td>
             </tr>
             <tr>
@@ -246,7 +249,7 @@ input {
                 <td>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <asp:TextBox ID="DateOfBirthTextBox" runat="server" TextMode="Date" Height="23px" Width="175px"></asp:TextBox>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="DateOfBirthTextBox" ErrorMessage="Date of birth can not be blank"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="DateOfBirthTextBox" ErrorMessage="Date of birth can not be blank" CssClass="auto-style9"></asp:RequiredFieldValidator>
                         </td>
             </tr>
             <tr>
@@ -254,7 +257,7 @@ input {
                 <td>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <asp:TextBox ID="DateOfJoiningTextBox" runat="server" TextMode="Date" Height="23px" Width="175px"></asp:TextBox>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="DateOfJoiningTextBox" ErrorMessage="Date of join can not be blank"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="DateOfJoiningTextBox" ErrorMessage="Date of join can not be blank" CssClass="auto-style9"></asp:RequiredFieldValidator>
                         </td>
             </tr>
             <tr>
@@ -269,8 +272,8 @@ input {
                                 <asp:ListItem>Rashan Card</asp:ListItem>
                                 <asp:ListItem>Passport</asp:ListItem>
                             </asp:DropDownList>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="IdProofDropDwomList" ErrorMessage="Please select ID Proof"></asp:RequiredFieldValidator>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" ControlToValidate="IdProofDropDwomList" ErrorMessage="ID Proof can not be blank"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="IdProofDropDwomList" ErrorMessage="Please select ID Proof" CssClass="auto-style9"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" ControlToValidate="IdProofDropDwomList" ErrorMessage="ID Proof can not be blank" CssClass="auto-style9"></asp:RequiredFieldValidator>
                         </td>
             </tr>
             <tr>
@@ -278,7 +281,7 @@ input {
                 <td>
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             <asp:TextBox ID="IdProofNumberTextBox" runat="server" Height="23px" Width="175px"></asp:TextBox>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="IdProofNumberTextBox" ErrorMessage="Please enter ID Proof Number"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="IdProofNumberTextBox" ErrorMessage="Please enter ID Proof Number" CssClass="auto-style9"></asp:RequiredFieldValidator>
                         </td>
             </tr>
             <tr>

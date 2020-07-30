@@ -49,6 +49,10 @@
   background-color: rgb(255, 183, 131);
 }
 
+        .auto-style4 {
+            color: #FF0000;
+        }
+
         </style>
 </head>
 <body>
@@ -128,6 +132,7 @@
                         <asp:ListItem>CPlus2020</asp:ListItem>
                         <asp:ListItem>MachLearning2020</asp:ListItem>
                     </asp:DropDownList>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="BatchCodeDropDownList" CssClass="auto-style4" ErrorMessage="Select Batch Code"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
@@ -140,6 +145,7 @@
                     <asp:DropDownList ID="FacultyNameDropDownList" runat="server" AutoPostBack="True" DataSourceID="SqlDataSource2" DataTextField="Faculty_Name" DataValueField="Faculty_Name" Height="23px" Width="175px">
                     </asp:DropDownList>
                     <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:FRSDatabaseConnectionString12 %>" SelectCommand="SELECT [Faculty_Name] FROM [AddFacultyDB]"></asp:SqlDataSource>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="FacultyNameDropDownList" CssClass="auto-style4" ErrorMessage="Select Faculty Name"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
@@ -160,6 +166,7 @@
                         <asp:ListItem>Mango DB</asp:ListItem>
                     </asp:DropDownList>
                     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:FRSDatabaseConnectionString16 %>" SelectCommand="SELECT [Subject_Name] FROM [AddSubjectDB]"></asp:SqlDataSource>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="SubjectDropDownList" CssClass="auto-style4" ErrorMessage="Select Subject"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
@@ -175,6 +182,7 @@
                         <asp:ListItem>11.00 am - 01.00 pm</asp:ListItem>
                         <asp:ListItem>02.00 pm - 04.00 pm</asp:ListItem>
                     </asp:DropDownList>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="BatchTimeDropDownList" CssClass="auto-style4" ErrorMessage="Select Batch Time"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>

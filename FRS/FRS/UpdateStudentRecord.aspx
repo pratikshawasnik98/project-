@@ -125,7 +125,7 @@
             <tr>
                 <td class="auto-style3">&nbsp;</td>
                 <td>
-                    <asp:GridView ID="GridView3" runat="server" AllowPaging="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" DataKeyNames="Student_ID" DataSourceID="SqlDataSource4" ForeColor="Black" GridLines="Horizontal" OnSelectedIndexChanged="GridView3_SelectedIndexChanged">
+                    <asp:GridView ID="GridView3" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataKeyNames="Student_ID" DataSourceID="SqlDataSource4" OnSelectedIndexChanged="GridView3_SelectedIndexChanged">
                         <Columns>
                             <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
                             <asp:BoundField DataField="Student_ID" HeaderText="Student_ID" InsertVisible="False" ReadOnly="True" SortExpression="Student_ID" />
@@ -137,14 +137,6 @@
                         <EmptyDataTemplate>
                             No Data Available
                         </EmptyDataTemplate>
-                        <FooterStyle BackColor="#CCCC99" ForeColor="Black" />
-                        <HeaderStyle BackColor="#333333" Font-Bold="True" ForeColor="White" />
-                        <PagerStyle BackColor="White" ForeColor="Black" HorizontalAlign="Right" />
-                        <SelectedRowStyle BackColor="#CC3333" Font-Bold="True" ForeColor="White" />
-                        <SortedAscendingCellStyle BackColor="#F7F7F7" />
-                        <SortedAscendingHeaderStyle BackColor="#4B4B4B" />
-                        <SortedDescendingCellStyle BackColor="#E5E5E5" />
-                        <SortedDescendingHeaderStyle BackColor="#242121" />
                     </asp:GridView>
                 </td>
             </tr>

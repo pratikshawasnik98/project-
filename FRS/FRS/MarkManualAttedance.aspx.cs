@@ -29,8 +29,8 @@ namespace FRS
             string sn = StudentNameDropDownList.Text;
             string fn = FacultyNameDropDownList.Text;
             string sub = SubjectDropDownList.Text;
-            string inT = TextBox1.Text;
-            string outT = TextBox2.Text;
+            string inT = InTimeTextBox.Text;
+            string outT = OutTimeTextBox.Text;
             string d = DateandTimeTextBox.Text;
             string atten = AttendanceDropDownList.Text;                
             
@@ -56,8 +56,8 @@ namespace FRS
             BatchCodeDropDownList.ClearSelection();
             StudentNameDropDownList.ClearSelection();
             SubjectDropDownList.ClearSelection();
-            TextBox1.Text = "";
-            TextBox2.Text = "";
+            InTimeTextBox.Text = "";
+            OutTimeTextBox.Text = "";
             DateandTimeTextBox.Text = "";
             AttendanceDropDownList.ClearSelection();
             

@@ -46,6 +46,10 @@
                     body {
   background-color: rgb(255, 183, 131);
 }
+        .auto-style8 {
+            color: #FF0000;
+            font-size: medium;
+        }
     </style>
 </head>
 <body>
@@ -85,7 +89,7 @@
 		  </div>
     </div>  
              
-
+             
               <nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container d-flex align-items-center px-4">
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -118,6 +122,12 @@
             <asp:TextBox ID="TextBox2" runat="server" TextMode="Date" CssClass="auto-style5"></asp:TextBox>
             </span>
             <br class="auto-style5" />
+            </strong>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox1" CssClass="auto-style8" ErrorMessage="Select Start Date"></asp:RequiredFieldValidator>
+            <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </strong>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBox2" CssClass="auto-style8" ErrorMessage="Select End Date"></asp:RequiredFieldValidator>
+            <strong>
             <span class="auto-style3">
             <br />
             <asp:Button ID="Button1" runat="server" CssClass="auto-style6" OnClick="Button1_Click" Text="Click here to view" />

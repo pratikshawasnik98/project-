@@ -35,6 +35,9 @@
         .auto-style2 {
             width: 60%;
         }
+        .auto-style3 {
+            color: #FF0000;
+        }
     </style>
    
 </head>
@@ -99,20 +102,31 @@
             </strong>
                 <table align="center" class="auto-style2" >
                     <tr>
-                        <td class="text-left"> <font color ="black">  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Select Your Email&nbsp;&nbsp;</font></td>
+                        <td class="text-left"> <font color ="black">  Select Your Email&nbsp;&nbsp;</font></td>
                         <td class="text-left">
-                        <asp:DropDownList ID="DropDownList1" runat="server">
-                        </asp:DropDownList>
+            <font color ="black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:TextBox ID="EmailTextBox" runat="server" TextMode="Email"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="EmailTextBox" ErrorMessage="Enter a Valid Email ID" ForeColor="Red"></asp:RequiredFieldValidator>
                         </td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
-                        <td>&nbsp;</td>
+                        <td>
+                            &nbsp;</td>
                     </tr>
                     <tr>
-                        <td class="text-left"><font color ="black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Renter new Password</td>
+                        <td class="text-left"><font color ="black">  Enter New Password</font></td>
                         <td class="text-left">
-                        <asp:TextBox ID="TextBox2" runat="server"  TextMode="Password"></asp:TextBox>
+            <font color ="black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><asp:TextBox ID="PassTextBox" runat="server"  TextMode="Password"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="PassTextBox" ErrorMessage="Enter Password" ForeColor="Red"></asp:RequiredFieldValidator>
+&nbsp;<br />
+                            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="PassTextBox" ErrorMessage="Please enter at least One captial letter, Special Symbol, number" ForeColor="Red" SetFocusOnError="True" ValidationExpression="^.*(?=.{8,})(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!*@#$%^&amp;+=]).*$"></asp:RegularExpressionValidator>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">Re-enter New Password</td>
+                        <td class="text-left">
+            <font color ="black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><asp:TextBox ID="CPassTextBox" runat="server" TextMode="Password"></asp:TextBox>
+                            <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="PassTextBox" ControlToValidate="CPassTextBox" ErrorMessage="Password Does not match" ForeColor="Red"></asp:CompareValidator>
                         </td>
                     </tr>
                     <tr>
@@ -124,11 +138,7 @@
                         <asp:Button ID="Button1" runat="server" Text="Submit" OnClick="Button1_Click" />
                         </td>
                     </tr>
-                    <tr>
-                        <td colspan="2">
-                        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TextBox2" ErrorMessage="Please enter at least One captial letter, Special Symbol, number" SetFocusOnError="True" ValidationExpression="^.*(?=.{8,})(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!*@#$%^&amp;+=]).*$"></asp:RegularExpressionValidator>
-                        </td>
-                    </tr>
+                   
                     <tr>
                         <td colspan="2">
                         <asp:Label ID="StausLabel" runat="server"></asp:Label>
@@ -136,7 +146,7 @@
                     </tr>
                     <tr>
                         <td colspan="2">
-                        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/RegisterForm.aspx">Already have a account ? Sign in</asp:HyperLink>
+                        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/RegisterForm.aspx" CssClass="auto-style3">Already have a account ? Sign in</asp:HyperLink>
                         </td>
                     </tr>
                 </table>

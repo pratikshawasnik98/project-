@@ -44,7 +44,7 @@
             <tr>
                 <td>&nbsp;</td>
                 <td>
-                    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" DataSourceID="SqlDataSource2" ForeColor="Black" GridLines="Horizontal">
+                    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource2">
                         <Columns>
                             <asp:BoundField DataField="Batch_Code" HeaderText="Batch_Code" SortExpression="Batch_Code" />
                             <asp:BoundField DataField="Faculty_Name" HeaderText="Faculty_Name" SortExpression="Faculty_Name" />
@@ -52,14 +52,6 @@
                             <asp:BoundField DataField="Address" HeaderText="Address" SortExpression="Address" />
                             <asp:BoundField DataField="Gender" HeaderText="Gender" SortExpression="Gender" />
                         </Columns>
-                        <FooterStyle BackColor="#CCCC99" ForeColor="Black" />
-                        <HeaderStyle BackColor="#333333" Font-Bold="True" ForeColor="White" />
-                        <PagerStyle BackColor="White" ForeColor="Black" HorizontalAlign="Right" />
-                        <SelectedRowStyle BackColor="#CC3333" Font-Bold="True" ForeColor="White" />
-                        <SortedAscendingCellStyle BackColor="#F7F7F7" />
-                        <SortedAscendingHeaderStyle BackColor="#4B4B4B" />
-                        <SortedDescendingCellStyle BackColor="#E5E5E5" />
-                        <SortedDescendingHeaderStyle BackColor="#242121" />
                     </asp:GridView>
                     <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:FRSDatabaseConnectionString41 %>" SelectCommand="SELECT [Batch_Code], [Faculty_Name], [Phone_Number], [Address], [Gender] FROM [AddFacultyDB] WHERE ([Faculty_Name] = @Faculty_Name)">
                         <SelectParameters>

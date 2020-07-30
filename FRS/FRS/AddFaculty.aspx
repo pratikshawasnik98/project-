@@ -69,6 +69,10 @@ body {
             text-align: left;
         }
         
+        .auto-style8 {
+            color: #FF0000;
+        }
+        
     </style>
 </head>
 <body>
@@ -139,7 +143,7 @@ body {
                     <td class="auto-style2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Faculty Name </td>
                     <td class="auto-style7">
                         <asp:TextBox ID="FacultyNameTextBox" runat="server" Height="23px" Width="175px"></asp:TextBox>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="FacultyNameTextBox" ErrorMessage="First name can not be blank">Enter first name</asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="FacultyNameTextBox" ErrorMessage="First name can not be blank" CssClass="auto-style8">Enter first name</asp:RequiredFieldValidator>
                         </td>
                 </tr>
                 <tr>
@@ -160,7 +164,7 @@ body {
                     <td class="auto-style2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phone Number</td>
                     <td class="auto-style7">
                         <asp:TextBox ID="PhoneNumberTextBox" runat="server" TextMode="Phone" Height="23px" Width="175px"></asp:TextBox>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator11" runat="server" ControlToValidate="PhoneNumberTextBox" ErrorMessage="Contact Number can not be blank"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator11" runat="server" ControlToValidate="PhoneNumberTextBox" ErrorMessage="Contact Number can not be blank" CssClass="auto-style8"></asp:RequiredFieldValidator>
                             </td>
                 </tr>
                 <tr>
@@ -193,7 +197,7 @@ body {
                         <asp:ListItem>CPlus2020</asp:ListItem>
                         <asp:ListItem>MachLearning2020</asp:ListItem>
                     </asp:DropDownList>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator12" runat="server" ControlToValidate="BatchCodeDropDownList" ErrorMessage="Please select Batch for assign to Faculty"></asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator12" runat="server" ControlToValidate="BatchCodeDropDownList" ErrorMessage="Please select Batch for assign to Faculty" CssClass="auto-style8"></asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>

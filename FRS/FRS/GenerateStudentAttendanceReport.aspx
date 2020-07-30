@@ -44,6 +44,9 @@
         .auto-style6 {
             width: 235px;
         }
+        .auto-style7 {
+            color: #FF0000;
+        }
     </style>
 </head>
 <body>
@@ -120,7 +123,7 @@
                 <td>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <asp:TextBox ID="EnterStudentNameTextBox" runat="server" Height="23px" Width="175px"></asp:TextBox>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="EnterStudentNameTextBox" CssClass="auto-style7" ErrorMessage="Enter Student Name"></asp:RequiredFieldValidator>
                 </td>
                 <td class="auto-style5">
 
@@ -177,7 +180,8 @@
                 </td>
                 <td>
                     <asp:TextBox ID="SelectStartDateTextBox" runat="server" TextMode="Date"></asp:TextBox>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="SelectStartDateTextBox" CssClass="auto-style7" ErrorMessage="Select Start Date"></asp:RequiredFieldValidator>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     </td>
                 <td class="auto-style5">
 
@@ -194,6 +198,7 @@
 
 
                     <asp:TextBox ID="SelectEndDateTextBox" runat="server" TextMode="Date"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" CssClass="auto-style7" ErrorMessage="Select End Date"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
@@ -221,19 +226,10 @@
     
 
 
-                    <asp:GridView ID="GridView2" runat="server" BackColor="#DEBA84" BorderColor="#DEBA84" BorderStyle="None" BorderWidth="1px" CellPadding="3" CellSpacing="2">
+                    <asp:GridView ID="GridView2" runat="server">
                         <EmptyDataTemplate>
                             <strong><span class="auto-style3">Record Not Found for this search </span></strong>
                         </EmptyDataTemplate>
-                        <FooterStyle BackColor="#F7DFB5" ForeColor="#8C4510" />
-                        <HeaderStyle BackColor="#A55129" Font-Bold="True" ForeColor="White" />
-                        <PagerStyle ForeColor="#8C4510" HorizontalAlign="Center" />
-                        <RowStyle BackColor="#FFF7E7" ForeColor="#8C4510" />
-                        <SelectedRowStyle BackColor="#738A9C" Font-Bold="True" ForeColor="White" />
-                        <SortedAscendingCellStyle BackColor="#FFF1D4" />
-                        <SortedAscendingHeaderStyle BackColor="#B95C30" />
-                        <SortedDescendingCellStyle BackColor="#F1E5CE" />
-                        <SortedDescendingHeaderStyle BackColor="#93451F" />
                     </asp:GridView>
                 </td>
             </tr>

@@ -17,12 +17,12 @@ namespace FRS
         DataSet ds = new DataSet();
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["email"] == null)
+           /* if (Session["email"] == null)
             {
                 Response.Redirect("Login.aspx");
             }
             else
-
+            */
             con.ConnectionString = "data source=DESKTOP-JPMOVSQ\\SQLEXPRESS;integrated security=true;database=FRSDatabase";
             showdata();
         }
