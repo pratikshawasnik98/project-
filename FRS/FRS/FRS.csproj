@@ -101,6 +101,8 @@
     <Content Include="css\owl.theme.default.min.css" />
     <Content Include="css\style.css" />
     <Content Include="FacultyDashboard.aspx" />
+    <Content Include="FacultyDateWiseAttendance.aspx" />
+    <Content Include="FacultyFullAttendanceReport.aspx" />
     <Content Include="finish.aspx" />
     <Content Include="fonts\flaticon\backup.txt" />
     <Content Include="fonts\flaticon\font\flaticon.css" />
@@ -114,6 +116,7 @@
     <Content Include="FullAttendanceReportStudentDashboard.aspx" />
     <Content Include="GenerateStudentAttendanceReport.aspx" />
     <Content Include="GenrateBatchWiseAttendance.aspx" />
+    <Content Include="GenrateBatchwiseAttendanceFaculty.aspx" />
     <Content Include="homePage.aspx" />
     <Content Include="images\.nettech.jpg" />
     <Content Include="images\about-2.jpg" />
@@ -272,6 +275,20 @@
     <Compile Include="FacultyDashboard.aspx.designer.cs">
       <DependentUpon>FacultyDashboard.aspx</DependentUpon>
     </Compile>
+    <Compile Include="FacultyDateWiseAttendance.aspx.cs">
+      <DependentUpon>FacultyDateWiseAttendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FacultyDateWiseAttendance.aspx.designer.cs">
+      <DependentUpon>FacultyDateWiseAttendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FacultyFullAttendanceReport.aspx.cs">
+      <DependentUpon>FacultyFullAttendanceReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FacultyFullAttendanceReport.aspx.designer.cs">
+      <DependentUpon>FacultyFullAttendanceReport.aspx</DependentUpon>
+    </Compile>
     <Compile Include="finish.aspx.cs">
       <DependentUpon>finish.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -306,6 +323,13 @@
     </Compile>
     <Compile Include="GenrateBatchWiseAttendance.aspx.designer.cs">
       <DependentUpon>GenrateBatchWiseAttendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GenrateBatchwiseAttendanceFaculty.aspx.cs">
+      <DependentUpon>GenrateBatchwiseAttendanceFaculty.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GenrateBatchwiseAttendanceFaculty.aspx.designer.cs">
+      <DependentUpon>GenrateBatchwiseAttendanceFaculty.aspx</DependentUpon>
     </Compile>
     <Compile Include="homePage.aspx.cs">
       <DependentUpon>homePage.aspx</DependentUpon>

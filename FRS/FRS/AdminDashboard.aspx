@@ -64,19 +64,47 @@
 		    </div>
 		  </div>
     </div>  
-     <br>
-             <br>
+     
       
+             
+              <nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container d-flex align-items-center px-4">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+	      <form>
+          
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"><a href="AdminDashboard.aspx" class="nav-link pl-0">Home</a></li>
+	        	<li class="nav-item "><a href="AddStudent.aspx" class="nav-link pl-0">Student Details</a></li>
+	        	<!--<li class="nav-item"><a href="UpdateStudentRecord.aspx" class="nav-link">Update Student Record</a></li>-->
+	        	<!--<li class="nav-item"><a href="GenerateStudentAttendanceReport.aspx" class="nav-link">Genrate Student Attendance Report</a></li>-->
+	        	<li class="nav-item"><a href="AddFaculty.aspx" class="nav-link">Faculty Details</a></li>
+	        	<!--<li class="nav-item"><a href="UpdateFacultyRecord.aspx" class="nav-link">Update Faculty Record</a></li>-->
+	          <li class="nav-item"><a href="BatchRegistration.aspx" class="nav-link">Batch Details</a></li>
+                <!--<li class="nav-item"><a href="UpdateBatch.aspx" class="nav-link">Update Batch Details</a></li>
+                <li class="nav-item"><a href="GenrateBatchWiseAttendance.aspx" class="nav-link">Generate Batch Wise Report</a></li>-->
+                <li class="nav-item"><a href="AddNewSubject.aspx" class="nav-link">Add New Subject</a></li>
+                <li class="nav-item"><a href="MarkManualAttedance.aspx" class="nav-link">Mark Maunal Attendance</a></li>
+	        </ul>
+	      </div>
+        </form>
+	    </div>
+	  </nav>
+
+
         <center>
     
          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+            <br />
     
          <asp:Button ID="UpdateStudentRecord" runat="server" Text="Update Student Record" OnClick="UpdateStudentRecord_Click" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
          <asp:Button ID="AddStudent" runat="server" Text="Add Student" OnClick="AddStudent_Click" />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-         <asp:Button ID="AddStudentDetails" runat="server" Text="View Student Details" OnClick="AddStudentDetails_Click" />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Button ID="GenerateStudentAttendanceReportButton" runat="server" OnClick="GenrateStudentAttendanceReportButton_Click" Text="Generate Student Attendance Report" />
             <br />
@@ -85,7 +113,6 @@
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
          <asp:Button ID="AddFaculty" runat="server" Text="Add Faculty" OnClick="AddFaculty_Click" />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-         <asp:Button ID="AddFacultyDetails" runat="server" Text="View Faculty Details" OnClick="AddFacultyDetails_Click" />
             <br />
             <br />
          <asp:Button ID="AddNewSubject" runat="server" Text="Add New Subject" OnClick="AddNewSubject_Click" />
@@ -93,10 +120,8 @@
             <asp:Button ID="MarkManualAttedance" runat="server" OnClick="MarkManualAttedance_Click" Text="Mark Manual Attedanceton" />
             <br />
             <br />
-         <asp:Button ID="BranchRegistration" runat="server" Text=" Branch Registration" OnClick="BranchRegistration_Click" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-         <asp:Button ID="UpdateBranch" runat="server" Text="Update Branch" OnClick="UpdateBranch_Click" />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <br />
          <br />
          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

@@ -33,18 +33,18 @@
         .auto-style2 {
             width: 70%;
         }
+        
+body {
+  background-color: rgb(255, 183, 131);
+}
+
     </style>
 </head>
 <body>
 
-     <center><u>
-      
-             <ul class="navbar-nav mr-auto">
-	        	<li class="nav-item active"><a href="AdminDashboard.aspx" class="nav-link pl-0">Profile</a></li> 	        		        		        	        	
-	        </ul>
-      </u></center>
+    
 
-         <div class="bg-top navbar-light">
+     <div class="bg-top navbar-light">
     	<div class="container">
     		<div class="row no-gutters d-flex align-items-center align-items-stretch">
     			<div class="col-md-4 d-flex align-items-center py-4">
@@ -75,20 +75,35 @@
 			    </div>
 		    </div>
 		  </div>
-    </div>  
-     <br>
-             <br>             
-    
-          <center><u>
+    </div>
+             
       
-             <ul class="navbar-nav mr-auto">
-	        	<li class="nav-item active"><a href="AdminDashboard.aspx" class="nav-link pl-0">Profile</a></li> 	        		        		        	        	
+             
+              <nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container d-flex align-items-center px-4">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu</button>
+	      <form>
+          
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav mr-auto">
+                 <li class="nav-item "><a href="AdminDashboard.aspx" class="nav-link pl-0">Home</a></li>
+	        	
+	        	<li class="nav-item " ><a href="AddFaculty.aspx" class="nav-link">Faculty Details</a></li>
+	        	<li class="nav-item active"><a href="UpdateFacultyRecord.aspx" class="nav-link">Update Faculty Record</a></li>
+	            <li class="nav-item"><a href="AddNewSubject.aspx" class="nav-link">Add New Subject</a></li>
+                <li class="nav-item"><a href="MarkManualAttedance.aspx" class="nav-link">Mark Maunal Attendance</a></li>
 	        </ul>
-      </u></center>
+	      </div>
+        </form>
+	    </div>
+	  </nav>
+ 
+         <font color="black">
 
     <form id="form1" runat="server">
         <div class="auto-style1">
-            <strong>Update Student Record<br />
+            <strong>Update Faculty Record<br />
             </strong>
         </div>
         <table align="center" class="auto-style2">
@@ -108,7 +123,7 @@
             <tr>
                 <td>&nbsp;</td>
                 <td>
-                    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="User_ID" DataSourceID="SqlDataSource2" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal">
+                    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="User_ID" DataSourceID="SqlDataSource2" BackColor="#DEBA84" BorderColor="#DEBA84" BorderStyle="None" BorderWidth="1px" CellPadding="3" CellSpacing="2">
                         <Columns>
                             <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
                             <asp:BoundField DataField="User_ID" HeaderText="User_ID" InsertVisible="False" ReadOnly="True" SortExpression="User_ID" />
@@ -117,14 +132,15 @@
                             <asp:BoundField DataField="Phone_Number" HeaderText="Phone_Number" SortExpression="Phone_Number" />
                             <asp:BoundField DataField="Gender" HeaderText="Gender" SortExpression="Gender" />
                         </Columns>
-                        <FooterStyle BackColor="#CCCC99" ForeColor="Black" />
-                        <HeaderStyle BackColor="#333333" Font-Bold="True" ForeColor="White" />
-                        <PagerStyle BackColor="White" ForeColor="Black" HorizontalAlign="Right" />
-                        <SelectedRowStyle BackColor="#CC3333" Font-Bold="True" ForeColor="White" />
-                        <SortedAscendingCellStyle BackColor="#F7F7F7" />
-                        <SortedAscendingHeaderStyle BackColor="#4B4B4B" />
-                        <SortedDescendingCellStyle BackColor="#E5E5E5" />
-                        <SortedDescendingHeaderStyle BackColor="#242121" />
+                        <FooterStyle BackColor="#F7DFB5" ForeColor="#8C4510" />
+                        <HeaderStyle BackColor="#A55129" Font-Bold="True" ForeColor="White" />
+                        <PagerStyle ForeColor="#8C4510" HorizontalAlign="Center" />
+                        <RowStyle BackColor="#FFF7E7" ForeColor="#8C4510" />
+                        <SelectedRowStyle BackColor="#738A9C" Font-Bold="True" ForeColor="White" />
+                        <SortedAscendingCellStyle BackColor="#FFF1D4" />
+                        <SortedAscendingHeaderStyle BackColor="#B95C30" />
+                        <SortedDescendingCellStyle BackColor="#F1E5CE" />
+                        <SortedDescendingHeaderStyle BackColor="#93451F" />
                     </asp:GridView>
                     <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:FRSDatabaseConnectionString7 %>" DeleteCommand="DELETE FROM [AddFacultyDB] WHERE [User_ID] = @User_ID" InsertCommand="INSERT INTO [AddFacultyDB] ([Faculty_Name], [Address], [Phone_Number], [Gender]) VALUES (@Faculty_Name, @Address, @Phone_Number, @Gender)" SelectCommand="SELECT [User_ID], [Faculty_Name], [Address], [Phone_Number], [Gender] FROM [AddFacultyDB] WHERE ([Faculty_Name] = @Faculty_Name)" UpdateCommand="UPDATE [AddFacultyDB] SET [Faculty_Name] = @Faculty_Name, [Address] = @Address, [Phone_Number] = @Phone_Number, [Gender] = @Gender WHERE [User_ID] = @User_ID">
                         <DeleteParameters>

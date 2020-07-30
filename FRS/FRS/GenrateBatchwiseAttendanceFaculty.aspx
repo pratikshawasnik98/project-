@@ -1,9 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="StudentDashboard.aspx.cs" Inherits="FRS.StudentDashboard" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="GenrateBatchwiseAttendanceFaculty.aspx.cs" Inherits="FRS.GenrateBatchwiseAttendanceFaculty" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    
     <title>M.K. Placement And Education Services</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -24,16 +25,29 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
-</head>
-      <style>
-         body {
+    <style type="text/css">
+
+
+
+
+        .auto-style2 {
+            font-size: xx-large;
+        }
+        .auto-style3 {
+            text-align: center;
+        }
+        .auto-style4 {
+            width: 60%;
+        }
+                    body {
   background-color: rgb(255, 183, 131);
 }
-        </style>
+    </style>
+</head>
 <body>
-
-
     <form id="form1" runat="server">
+
+
          <div class="bg-top navbar-light">
     	<div class="container">
     		<div class="row no-gutters d-flex align-items-center align-items-stretch">
@@ -66,8 +80,8 @@
 		    </div>
 		  </div>
     </div>  
-
              
+
               <nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container d-flex align-items-center px-4">
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -77,9 +91,10 @@
           
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav mr-auto">
-                <li class="nav-item active"><a href="StudentDashboard.aspx" class="nav-link pl-0">Home</a></li> 
-	        	<li class="nav-item "><a href="FullAttendanceReportStudentDashboard.aspx" class="nav-link pl-0">Full Attendance Report</a></li>
-                <li class="nav-item "><a href="ViewDateWiseAttendanceReport.aspx" class="nav-link pl-0">View Date Wise Report</a></li>
+                <li class="nav-item "><a href="FacultyDashboard.aspx" class="nav-link pl-0">Home</a></li> 
+	        	<li class="nav-item "><a href="FacultyFullAttendanceReport.aspx" class="nav-link pl-0">Full Attendance Report</a></li>
+                <li class="nav-item "><a href="FacultyDateWiseAttendance.aspx" class="nav-link pl-0">View Date Wise Report</a></li>
+                     <li class="nav-item active"><a href="GenrateBatchwiseAttendanceFaculty.aspx" class="nav-link pl-0">View Batch Wise Report</a></li>
 	        	
 	        </ul>
 	      </div>
@@ -87,47 +102,29 @@
 	    </div>
 	  </nav>
 
+             <font color="black">
 
-    <font color="black">
-         <p class="text-center">
-             &nbsp;</p>
-    <p class="text-center">
-             <em><strong>
-             <asp:Label ID="Label1" runat="server" Text="Label" CssClass="auto-style1"></asp:Label>
-             </strong></em>
-         </p>
-         <p class="text-center">
-             <strong>
-             <asp:Button ID="Button1" runat="server" CssClass="auto-style2" OnClick="Button1_Click" Text="View Your Registration Details Here" />
-             </strong>
-         </p>
-         <table align="center" class="auto-style3">
-             <tr>
-                 <td>
-                     &nbsp;</td>
-                 <td>
-                     <asp:GridView ID="GridView1" runat="server">
-                     </asp:GridView>
-                     <br />
-                     <br />
-                     <br />
-                     <br />
-                 </td>
-             </tr>
-             <tr>
-                 <td>&nbsp;</td>
-                 <td>&nbsp;</td>
-             </tr>
-         </table>
-    
-    
-      
-        
-    </form>
-    
-    
-      
-        
+        <div class="auto-style3">
+            <strong><span class="auto-style2">&nbsp;Generate Batch Wise Attendance Report</span></strong></div>
+        <table align="center" class="auto-style4">
+            <tr>
+                <td>View faculty Batch Wise Report </td>
+                <td>
+                    <asp:Button ID="ShowButton" runat="server" OnClick="ShowButton_Click" Text="Show" />
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>
+                    <asp:GridView ID="GridView1" runat="server">
+                    </asp:GridView>
+                </td>
+            </tr>
+            </table>
     </form>
 </body>
 </html>

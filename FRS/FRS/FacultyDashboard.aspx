@@ -74,69 +74,35 @@
 		    </div>
 		  </div>
     </div>  
+             
 
+              <nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container d-flex align-items-center px-4">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+	      <form>
+          
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"><a href="FacultyDashboard.aspx" class="nav-link pl-0">Home</a></li> 
+	        	<li class="nav-item "><a href="FacultyFullAttendanceReport.aspx" class="nav-link pl-0">Full Attendance Report</a></li>
+                <li class="nav-item "><a href="FacultyDateWiseAttendance.aspx" class="nav-link pl-0">View Date Wise Report</a></li>
+                     <li class="nav-item "><a href="GenrateBatchwiseAttendanceFaculty.aspx" class="nav-link pl-0">View Batch Wise Report</a></li>
+	        	
+	        </ul>
+	      </div>
+        </form>
+	    </div>
+	  </nav>
+
+             <font color="black">
     <form id="form1" runat="server">
-    <h1 class="auto-style1"><strong>Faculty Login </strong></h1>
+        <h1 class="auto-style1"><strong>Faculty Login </strong></h1>
     <p>
         &nbsp;</p>
 
     
-        <table align="center" class="auto-style2">
-            <tr>
-                <td>
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>
-                    <asp:Button ID="GenerateStudentAttendanceReportButton" runat="server" OnClick="GenrateStudentAttendanceReportButton_Click" Text="Generate Student Attendance Report" />
-                </td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>
-                    <asp:Button ID="GenrateBatchWiseReportButton" runat="server" OnClick="GenrateBatchWiseReportButton_Click" Text="Genrate Batch Wise Report" />
-                </td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td class="auto-style3"></td>
-                <td class="auto-style3"></td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-        </table>
     </form>
 </body>
 </html>

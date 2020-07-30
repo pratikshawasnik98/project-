@@ -56,7 +56,12 @@ namespace FRS
             sda.Fill(ds, "registerDB");
             if (ds.Tables[0].Rows.Count > 0)//changes
             {
-               Session["email"] = email;
+                Session["email"] = email;
+                foreach (DataRow dr in ds.Tables[0].Rows)
+                {
+                    Session["First_Name"] = dr["first_name"].ToString();
+                    Session["Last_Name"] = dr["last_name"].ToString();
+                }
                 //Response.Redirect("StudentDashboard.aspx");
                 //Response.Write(r);
                 if (r == "Student")

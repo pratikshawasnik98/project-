@@ -131,16 +131,8 @@
                     </tr>
                     <tr>
                         <td colspan="2">
-                            &nbsp;</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
                         <asp:Label ID="StausLabel" runat="server"></asp:Label>
                         </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            &nbsp;</td>
                     </tr>
                     <tr>
                         <td colspan="2">

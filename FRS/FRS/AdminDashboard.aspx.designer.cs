@@ -42,15 +42,6 @@ namespace FRS
         protected global::System.Web.UI.WebControls.Button AddStudent;
 
         /// <summary>
-        /// AddStudentDetails control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button AddStudentDetails;
-
-        /// <summary>
         /// GenerateStudentAttendanceReportButton control.
         /// </summary>
         /// <remarks>
@@ -78,15 +69,6 @@ namespace FRS
         protected global::System.Web.UI.WebControls.Button AddFaculty;
 
         /// <summary>
-        /// AddFacultyDetails control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button AddFacultyDetails;
-
-        /// <summary>
         /// AddNewSubject control.
         /// </summary>
         /// <remarks>
@@ -103,24 +85,6 @@ namespace FRS
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button MarkManualAttedance;
-
-        /// <summary>
-        /// BranchRegistration control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BranchRegistration;
-
-        /// <summary>
-        /// UpdateBranch control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button UpdateBranch;
 
         /// <summary>
         /// BatchRegistration control.

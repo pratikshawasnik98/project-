@@ -68,7 +68,9 @@ input {
         .auto-style8 {
             height: 12px;
         }
-
+ body {
+  background-color: rgb(255, 183, 131);
+}
     </style>
 </head>
 <body>
@@ -112,7 +114,23 @@ input {
 		    </div>
 		  </div>
     </div>
-
+         <nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container d-flex align-items-center px-4">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+	      <form>
+          
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"><a href="RegisterForm.aspx" class="nav-link pl-0">Registration Form</a></li> 
+	        	<li class="nav-item "><a href="mywebcam.html" class="nav-link pl-0">Scan Face</a></li>
+                
+	        </ul>
+	      </div>
+        </form>
+	    </div>
+	  </nav>
 
     <form id="form1" runat="server">
         <font color ="black">

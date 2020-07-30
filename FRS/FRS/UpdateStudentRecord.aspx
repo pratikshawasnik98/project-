@@ -35,12 +35,16 @@
         .auto-style3 {
             width: 505px;
         }
+          body {
+  background-color: rgb(255, 183, 131);
+}
     </style>
 </head>
 <body>
     
     
-         <div class="bg-top navbar-light">
+        <div>
+            <div class="bg-top navbar-light">
     	<div class="container">
     		<div class="row no-gutters d-flex align-items-center align-items-stretch">
     			<div class="col-md-4 d-flex align-items-center py-4">
@@ -72,15 +76,32 @@
 		    </div>
 		  </div>
     </div>  
-     <br>
-             <br>             
-    
-          <center><u>
-      
-             <ul class="navbar-nav mr-auto">
-	        	<li class="nav-item active"><a href="AdminDashboard.aspx" class="nav-link pl-0">Profile</a></li> 	        		        		        	        	
+
+            
+              <nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container d-flex align-items-center px-4">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+	      <form>
+          
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav mr-auto">
+                <li class="nav-item "><a href="AdminDashboard.aspx" class="nav-link pl-0">Home</a></li>
+	        	<li class="nav-item "><a href="AddStudent.aspx" class="nav-link pl-0">Student Details</a></li>
+	        	<li class="nav-item active"><a href="UpdateStudentRecord.aspx" class="nav-link">Update Student Record</a></li>
+	        	<li class="nav-item"><a href="GenerateStudentAttendanceReport.aspx" class="nav-link">Genrate Student Attendance Report</a></li>
+	        	
+                <li class="nav-item"><a href="AddNewSubject.aspx" class="nav-link">Add New Subject</a></li>
+                <li class="nav-item"><a href="MarkManualAttedance.aspx" class="nav-link">Mark Maunal Attendance</a></li>
 	        </ul>
-      </u></center>
+	      </div>
+        </form>
+	    </div>
+	  </nav>
+
+        <font color ="black">
+
    <form id="form1" runat="server">
         <div class="auto-style1">
             <strong>Update Student Record</strong></div>
