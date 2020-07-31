@@ -25,7 +25,7 @@ namespace FRS
             }
             else
             {
-                con.ConnectionString = "data source=DESKTOP-JPMOVSQ\\SQLEXPRESS;integrated security=true;database=FRSDatabase";
+                con.ConnectionString = "data source =DESKTOP-JPMOVSQ\\SQLEXPRESS; integrated security = true; database = FRSDatabase";
                 showdata();
             }
         }
@@ -54,13 +54,13 @@ namespace FRS
             while (dr.Read())
             {
                 fn = dr["First_Name"].ToString();
-                fn = fn+" " +dr["last_name"].ToString();
+                fn = fn+" " +dr["Last_Name"].ToString();
             }
            // Response.Write("fn=" + fn);
 
             dr.Close();
             con.Close();
-            string query2 = "select * from StudentMarkManualAttendanceDB where Student_Name='" + fn + "'";
+            string query2 = "select * from FacultyMarkManualAttendanceDB where Faculty_Name='" + fn + "'";
             SqlDataAdapter da = new SqlDataAdapter(query2, con);
             DataSet ds1 = new DataSet();
 

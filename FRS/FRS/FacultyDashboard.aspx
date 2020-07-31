@@ -29,12 +29,6 @@
         .auto-style1 {
             text-align: center;
         }
-        .auto-style2 {
-            width: 70%;
-        }
-        .auto-style3 {
-            height: 30px;
-        }
              body {
   background-color: rgb(255, 183, 131);
 }
@@ -99,6 +93,33 @@
              <font color="black">
     <form id="form1" runat="server">
         <h1 class="auto-style1"><strong>Faculty Login </strong></h1>
+
+         <p class="text-center">
+        <asp:Label ID="Label1" runat="server" CssClass="auto-style4" style="font-size: large"></asp:Label>
+        </p>
+        <p class="text-center">
+            <asp:Button ID="Button1" runat="server" CssClass="auto-style5" OnClick="Button1_Click" Text="View Your Registration Details Here" style="font-size: medium" />
+        </p>
+        <p class="text-center">
+            &nbsp;</p>
+        <table align="center" class="auto-style6">
+            <tr>
+                <td>
+                    <asp:GridView ID="GridView1" runat="server" CssClass="auto-style7" style="font-size: medium">
+                    </asp:GridView>
+                </td>
+            </tr>
+        </table>
+        <p class="text-center">
+            &nbsp;</p>
+        <p class="text-center">
+            &nbsp;</p>
+        <p class="text-center">
+            &nbsp;</p>
+        <p class="text-center">
+            &nbsp;</p>
+
+    
     <p>
         &nbsp;</p>
 

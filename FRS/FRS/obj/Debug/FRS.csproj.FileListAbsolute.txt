@@ -294,3 +294,4 @@ E:\gitHub programs\project-\FRS\FRS\bin\Microsoft.CodeDom.Providers.DotNetCompil
 E:\gitHub programs\project-\FRS\FRS\obj\Debug\FRS.csproj.CopyComplete
 E:\gitHub programs\project-\FRS\FRS\obj\Debug\FRS.dll
 E:\gitHub programs\project-\FRS\FRS\obj\Debug\FRS.pdb
+E:\gitHub programs\project-\FRS\FRS\obj\Debug\FRS.csprojAssemblyReference.cache
